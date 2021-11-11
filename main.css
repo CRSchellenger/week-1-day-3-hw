@@ -1,0 +1,130 @@
+.container {
+    display: grid;
+    grid-template-columns: 300.5px 819px 277.5px;
+    grid-template-rows: 101px 289px 32px 37px 121.5px 41px 40px 23px 152px 20px 40px 2.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". si ."
+      ". . ."
+      ". new ."
+      ". sgnupbtn ."
+      ". . ."
+      "border border border"
+      ". . ."
+      ". footer ."
+      ". . ."
+      "border1 border1 border1"
+      ". . .";
+  }
+  
+  .si {
+    display: grid;
+    grid-template-columns: 10px 500px;
+    grid-template-rows: 30px 25px 40px 15px 25px 40px 17.5px 40px 15px 40px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". si-head"
+      ". email-head"
+      ". email-input"
+      ". ."
+      ". pwhead"
+      ". pwinput"
+      ". ."
+      ". cont-ban"
+      ". ."
+      ". help";
+    grid-area: si;
+  }
+  
+  .si-head { grid-area: si-head; }
+  
+  .email-head { grid-area: email-head; }
+  
+  .email-input { grid-area: email-input; }
+  
+  .pwhead { grid-area: pwhead; }
+  
+  .pwinput { grid-area: pwinput; }
+  
+  .cont-ban { grid-area: cont-ban; }
+  
+  .help { grid-area: help; }
+  
+  .new {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 11px 45.9fr 15.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+    grid-area: new;
+  }
+  
+  .sgnupbtn {
+    display: grid;
+    grid-template-columns: 0.1fr 2.8fr 0.1fr;
+    grid-template-rows: 40px 40px 40px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". signupbtn ."
+      ". . .";
+    grid-area: sgnupbtn;
+  }
+  
+  .signupbtn { grid-area: signupbtn; }
+  
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.9fr 1fr 1.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". COND PRVY HELP ."
+      ". cpyr cpyr cpyr ."
+      ". . . . .";
+    grid-area: footer;
+  }
+  
+  .COND { grid-area: COND; }
+  
+  .PRVY { grid-area: PRVY; }
+  
+  .HELP { grid-area: HELP; }
+  
+  .cpyr { grid-area: cpyr; }
+  
+  .border {
+    display: grid;
+    grid-template-columns: 40px 1313px 40px;
+    grid-template-rows: 10px 20px 10px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+    grid-area: border;
+  }
+  
+  .border1 {
+    display: grid;
+    grid-template-columns: 40px 1313px 40fr;
+    grid-template-rows: 10px 20px 10px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+    grid-area: border1;
+  }
+  
