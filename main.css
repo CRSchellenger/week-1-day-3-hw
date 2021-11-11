@@ -1,130 +1,118 @@
 .container {
-    display: grid;
-    grid-template-columns: 300.5px 819px 277.5px;
-    grid-template-rows: 101px 289px 32px 37px 121.5px 41px 40px 23px 152px 20px 40px 2.3fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . ."
-      ". si ."
-      ". . ."
-      ". new ."
-      ". sgnupbtn ."
-      ". . ."
-      "border border border"
-      ". . ."
-      ". footer ."
-      ". . ."
-      "border1 border1 border1"
-      ". . .";
-  }
-  
-  .si {
-    display: grid;
-    grid-template-columns: 10px 500px;
-    grid-template-rows: 30px 25px 40px 15px 25px 40px 17.5px 40px 15px 40px;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". si-head"
-      ". email-head"
-      ". email-input"
-      ". ."
-      ". pwhead"
-      ". pwinput"
-      ". ."
-      ". cont-ban"
-      ". ."
-      ". help";
-    grid-area: si;
-  }
-  
-  .si-head { grid-area: si-head; }
-  
-  .email-head { grid-area: email-head; }
-  
-  .email-input { grid-area: email-input; }
-  
-  .pwhead { grid-area: pwhead; }
-  
-  .pwinput { grid-area: pwinput; }
-  
-  .cont-ban { grid-area: cont-ban; }
-  
-  .help { grid-area: help; }
-  
-  .new {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 11px 45.9fr 15.3fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . ."
-      ". . ."
-      ". . .";
-    grid-area: new;
-  }
-  
-  .sgnupbtn {
-    display: grid;
-    grid-template-columns: 0.1fr 2.8fr 0.1fr;
-    grid-template-rows: 40px 40px 40px;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . ."
-      ". signupbtn ."
-      ". . .";
-    grid-area: sgnupbtn;
-  }
-  
-  .signupbtn { grid-area: signupbtn; }
-  
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.9fr 1fr 1.1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". COND PRVY HELP ."
-      ". cpyr cpyr cpyr ."
-      ". . . . .";
-    grid-area: footer;
-  }
-  
-  .COND { grid-area: COND; }
-  
-  .PRVY { grid-area: PRVY; }
-  
-  .HELP { grid-area: HELP; }
-  
-  .cpyr { grid-area: cpyr; }
-  
-  .border {
-    display: grid;
-    grid-template-columns: 40px 1313px 40px;
-    grid-template-rows: 10px 20px 10px;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . ."
-      ". . ."
-      ". . .";
-    grid-area: border;
-  }
-  
-  .border1 {
-    display: grid;
-    grid-template-columns: 40px 1313px 40fr;
-    grid-template-rows: 10px 20px 10px;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . ."
-      ". . ."
-      ". . .";
-    grid-area: border1;
-  }
-  
+
+  display: grid;
+
+  grid-template-columns: 1fr 0.1fr 3.8fr 0.2fr 0.7fr;
+
+  grid-template-rows: 1fr 1fr 1fr 1fr 0.3fr 1fr 1fr 0.3fr 0.8fr 0.3fr 0.9fr 0.4fr 1.4fr 0.8fr 1.8fr 0.6fr 1.4fr 0.4fr 1fr 0.3fr 1fr 7.7fr 1fr;
+
+  gap: 0px 0px;
+
+  grid-auto-flow: row;
+
+  grid-template-areas:
+
+    ". . . . ."
+
+    ". . Si-h . ."
+
+    ". . Email-head . ."
+
+    ". . Emailinput- . ."
+
+    ". . . . ."
+
+    ". . Pwd-h . ."
+
+    ". . Pwd-input . ."
+
+    ". . . . ."
+
+    ". . help . ."
+
+    ". . . . ."
+
+    ". . Cont-btn . ."
+
+    ". . . . ."
+
+    ". . Help-h1 . ."
+
+    ". . . . ."
+
+    "Border Border Border . ."
+
+    ". . . . ."
+
+    ". . Footer . ."
+
+    ". . . . ."
+
+    ". . footer-a . ."
+
+    ". . . . ."
+
+    "Boder Boder Boder . ."
+
+    ". . . . ."
+
+    ". . . . .";
+
+}
+
+
+
+.Si-h { grid-area: Si-h; }
+
+
+
+.Email-head { grid-area: Email-head; }
+
+
+
+.Emailinput- { grid-area: Emailinput-; }
+
+
+
+.Pwd-h { grid-area: Pwd-h; }
+
+
+.Pwd-input { grid-area: Pwd-input; }
+
+
+
+.help { grid-area: help; }
+
+
+
+.Cont-btn { 
+  grid-area: Cont-btn;
+  align-items: center;
+ }
+
+
+button{
+  width:200px;
+}
+.Help-h1 { grid-area: Help-h1; }
+
+
+
+.Border { 
+  grid-area: Border;
+  border-bottom:1px solid black; 
+  width: 1000px;
+  margin-left: 250px;
+}
+
+
+
+.Footer { grid-area: Footer; }
+
+
+
+.footer-a { grid-area: footer-a; }
+
+
+
+.Boder { grid-area: Boder; } 
